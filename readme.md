@@ -9,7 +9,7 @@ An intelligent command-line interface powered by Groq's AI that helps you execut
 - ⚡ **Fast Execution** - Powered by Groq's high-speed API for instant responses
 - 🛡️ **Safety First** - Built-in protection against dangerous system commands
 - 💾 **Command History** - Smart history tracking with contextual suggestions
-- 🔐 **Environment Variables** - Secure API key management with .env support
+- 🔐 **Environment Variables** - Secure API key
 
 ## Installation
 
