@@ -78,14 +78,6 @@ inline --execute find all Python files modified in the last 7 days
 #### Get Suggestions
 Press `Ctrl+T` inside the terminal to get AI suggestions for your next command based on your command history.
 
-## Requirements
-
-All dependencies are listed in `requirements.txt`:
-
-- **groq** (>=0.10.0) - Groq API client
-- **prompt_toolkit** (3.0.51) - Interactive command-line interface
-- **python-dotenv** (1.1.1) - Environment variable management
-
 ## Safety Features
 
 Inline includes built-in protection against dangerous operations:
@@ -95,7 +87,7 @@ Inline includes built-in protection against dangerous operations:
 - Prevents registry and boot sector modifications
 - Windows and Unix-like systems supported
 
-⚠️ **Note:** Always review AI-suggested commands before execution, especially system-level operations.
+⚠️ **Note:** Especially system-level operations always review AI-suggested commands before execution.
 
 ## Platform Support
 
