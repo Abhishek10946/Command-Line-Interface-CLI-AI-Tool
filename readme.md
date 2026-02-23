@@ -37,8 +37,7 @@ An intelligent command-line interface powered by Groq's AI that helps you execut
    ```
 
 4. **Configure your Groq API key**
-   - Create a `.env` file in the project root
-   - Add your API key:
+   - Add your API key in project main.py :
      ```
      GROQ_API_KEY=your_api_key_here
      ```
@@ -98,61 +97,12 @@ Inline includes built-in protection against dangerous operations:
 
 ⚠️ **Note:** Always review AI-suggested commands before execution, especially system-level operations.
 
-## Architecture
-
-The application consists of three main AI functions:
-
-1. **askQuestions()** - Answers user queries using Groq's Llama 3.3 70B model
-2. **executeQuery()** - Converts natural language to shell commands
-3. **suggest_commands()** - Provides command suggestions based on history
-
-All requests use the `llama-3.3-70b-versatile` model for optimal performance.
-
-## Environment Variables
-
-Create a `.env` file with the following:
-
-```env
-GROQ_API_KEY=your_api_key_from_console_groq_com
-```
-
-## Troubleshooting
-
-### "GROQ_API_KEY environment variable not set"
-- Create a `.env` file in the project directory
-- Add your API key: `GROQ_API_KEY=your_key_here`
-- Restart the application
-
-### Network Connection Errors
-- Check your internet connection
-- Verify your Groq API key is valid
-- Ensure you haven't exceeded API rate limits
-
-### Command Not Executing
-- Review the AI-suggested command before execution
-- Check if the command contains dangerous patterns
-- Ensure proper syntax for your operating system
-
 ## Platform Support
 
 - ✅ **Windows** - Full support with Windows Command Prompt
 - ✅ **macOS** - Full support with Bash/Zsh
 - ✅ **Linux** - Full support with Bash and other shells
 
-## API Limitations
-
-The Groq free tier provides generous limits:
-- Fast response times (ideal for interactive use)
-- Per-minute rate limits apply
-- No hard daily limit for free tier users
-
-For more details, visit [console.groq.com](https://console.groq.com)
-
-## Contact & Support
-
-For issues, suggestions, or support:
-- **Email:** inlineterminal@gmail.com
-- Run `inline --contact` in the application
 
 ## License
 
@@ -161,7 +111,3 @@ This project is provided as-is for educational and personal use.
 ## Disclaimer
 
 ⚠️ **Important:** This tool executes shell commands. Always review AI-suggested commands before execution. The developers are not responsible for accidental data loss or system damage from command execution. Use at your own risk and always maintain backups of important data.
-
----
-
-**Built with** ❤️ **using Groq API and prompt_toolkit**
